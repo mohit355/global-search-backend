@@ -15,10 +15,9 @@ const app = express();
 app.use(morgan("dev"));
 app.use(cors());
 app.use(bodyParser.json());
-// app.use(bodyParser.urlencoded());
 
 // Database connection
-const URI = process.env.LOCAL_DB;
+const URI = process.env.MONGODB_URI;
 mongoose.connect(
   URI,
   { useNewUrlParser: true, useUnifiedTopology: true },
@@ -28,7 +27,7 @@ mongoose.connect(
     }
 
     if (success) {
-      console.log("Connected to MongoDB");
+      console.log("Connected to MongoDB-atlas");
     }
   }
 );
