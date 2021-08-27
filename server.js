@@ -33,7 +33,7 @@ mongoose.connect(
 );
 
 // Routes middleware
-app.use("/global-search", homeRoutes);
+app.use("/", homeRoutes);
 app.use("/global-search", fetchCompanyRoutes);
 
 // PORT listening
