@@ -17,7 +17,7 @@ app.use(cors());
 app.use(bodyParser.json());
 // https://global-search-backend.herokuapp.com/
 // Database connection
-const URI = process.env.LOCAL_DB;
+const URI = process.env.MONGODB_URI;
 mongoose.connect(
   URI,
   { useNewUrlParser: true, useUnifiedTopology: true },
