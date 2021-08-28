@@ -15,7 +15,7 @@ const app = express();
 app.use(morgan("dev"));
 app.use(cors());
 app.use(bodyParser.json());
-// https://global-search-backend.herokuapp.com/
+
 // Database connection
 const URI = process.env.MONGODB_URI;
 mongoose.connect(
