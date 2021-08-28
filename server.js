@@ -15,9 +15,9 @@ const app = express();
 app.use(morgan("dev"));
 app.use(cors());
 app.use(bodyParser.json());
-
+// https://global-search-backend.herokuapp.com/
 // Database connection
-const URI = process.env.MONGODB_URI;
+const URI = process.env.LOCAL_DB;
 mongoose.connect(
   URI,
   { useNewUrlParser: true, useUnifiedTopology: true },
@@ -27,7 +27,7 @@ mongoose.connect(
     }
 
     if (success) {
-      console.log("Connected to MongoDB-atlas");
+      console.log("Connected to MongoDB Local");
     }
   }
 );
