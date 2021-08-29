@@ -1,4 +1,7 @@
-# Global Search by OneShot
+# [Global Search by OneShot](https://github.com/mohit355/global-search-backend)
+
+### Live Frontend : [Live](https://global-search.netlify.app/)
+### Frontend Repo : [Repo](https://github.com/mohit355/global-search-backend)
 
 #### Requirements of this project
 
